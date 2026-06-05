@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お申し込み・お問い合わせ | 百人の顔</title>
+  <meta name="description" content="「百人の顔」へのご参加・ご購入・お問い合わせ。TEL: 03-3569-6700（担当：塩澤）。平日10:00〜18:00受付。NPO法人先端医療をささえる会（銀座風月堂ビル5F）。">
+  <link rel="canonical" href="https://hyakuninnokao026.oops.jp/hundred-face/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="お申し込み・お問い合わせ | 百人の顔">
+  <meta property="og:description" content="「百人の顔」へのご参加・ご購入・お問い合わせはTEL: 03-3569-6700（担当：塩澤）まで。平日10:00〜18:00受付。">
+  <meta property="og:url" content="https://hyakuninnokao026.oops.jp/hundred-face/contact.html">
+  <meta property="og:image" content="ogp.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="百人の顔">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---- TEL HERO ---- */
+    .tel-hero {
+      background: linear-gradient(150deg, var(--navy) 0%, #0d2a5c 55%, var(--blue) 100%);
+      padding: calc(var(--header-h) + 64px) 24px 72px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .tel-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: repeating-linear-gradient(45deg, transparent, transparent 70px, rgba(255,255,255,0.012) 70px, rgba(255,255,255,0.012) 71px);
+    }
+    .tel-hero-inner { position: relative; z-index: 1; }
+    .tel-hero h1 { color: #fff; margin-bottom: 8px; }
+    .tel-hero-tagline {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(14px, 2.2vw, 18px); color: #9abcd8;
+      margin-bottom: 40px; line-height: 1.9;
+    }
+
+    .tel-box {
+      display: inline-block;
+      background: rgba(184,150,62,0.08);
+      border: 2px solid rgba(184,150,62,0.45);
+      border-radius: 10px; padding: 28px 56px; margin-bottom: 24px;
+    }
+    .tel-label-sm { font-size: 12px; color: #7a9ec8; letter-spacing: 0.15em; margin-bottom: 8px; }
+    .tel-num {
+      display: block;
+      font-family: 'Shippori Mincho', serif;
+      font-size: clamp(34px, 7vw, 60px); font-weight: 700;
+      color: var(--gold-lt); letter-spacing: 0.06em;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .tel-num:hover { color: #fff; }
+    .tel-person-row {
+      display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+      font-size: 14px; color: #7090b0; margin-top: 6px;
+    }
+    .tel-person-row strong { color: var(--gold-lt); }
+
+    .tel-reassure {
+      display: inline-block;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px; padding: 14px 28px;
+      font-size: 14px; color: #8aaed4; line-height: 1.8;
+      max-width: 520px;
+    }
+    .tel-reassure strong { color: #b0d0f0; }
+
+    @media (max-width: 480px) {
+      .tel-box { padding: 20px 28px; }
+    }
+
+    /* ---- CONTACT METHODS ---- */
+    .contact-methods {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px; margin-top: 48px;
+    }
+    .method-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-top: 4px solid var(--blue);
+      border-radius: 0 0 var(--radius) var(--radius);
+      padding: 32px 28px; text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .method-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(26,58,107,0.14); }
+    .method-card.tel-card { border-top-color: var(--gold); }
+    .method-icon { font-size: 40px; margin-bottom: 14px; display: block; }
+    .method-card h3 { font-size: 18px; margin-bottom: 12px; }
+    .method-val {
+      display: block; font-size: 19px; font-weight: 700;
+      color: var(--navy); letter-spacing: 0.04em; margin: 8px 0 4px;
+    }
+    @media (prefers-color-scheme: dark) { .method-val { color: var(--gold-lt); } }
+    .method-card p { font-size: 13px; color: var(--muted); line-height: 1.9; }
+
+    /* ---- ADDRESS BLOCK ---- */
+    .address-block {
+      background: var(--gray); border-radius: var(--radius);
+      padding: 36px 40px; max-width: 640px; margin: 0 auto;
+    }
+    .address-block h3 { color: var(--blue); margin-bottom: 16px; }
+    @media (prefers-color-scheme: dark) { .address-block h3 { color: var(--gold-lt); } }
+    .address-block address { font-style: normal; font-size: 15px; color: var(--text); line-height: 2.2; }
+    .address-block strong { color: var(--navy); }
+    @media (prefers-color-scheme: dark) { .address-block strong { color: var(--text); } }
+    .address-tel { font-size: 18px; font-weight: 700; color: var(--gold) !important; }
+
+    /* ---- FAQ ---- */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; margin-top: 36px; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .faq-q {
+      background: var(--white); padding: 18px 22px; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 14px;
+      font-weight: 600; font-size: 15px; color: var(--navy); transition: background 0.2s;
+      border: none; width: 100%; text-align: left;
+    }
+    @media (prefers-color-scheme: dark) { .faq-q { color: var(--text); } }
+    .faq-q:hover { background: var(--light); }
+    .faq-q-text::before { content: 'Q. '; color: var(--mid); }
+    .faq-arrow {
+      flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+      background: var(--light); display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s, background 0.2s;
+      font-size: 12px; color: var(--mid);
+    }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); background: var(--blue); color: #fff; }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-item.open .faq-a { max-height: 320px; }
+    .faq-a-inner {
+      padding: 16px 22px 20px; border-top: 1px solid var(--border);
+      font-size: 14px; color: var(--muted); line-height: 1.9;
+      background: var(--gray);
+    }
+    .faq-a-inner::before { content: 'A. '; color: var(--accent); font-weight: 700; }
+
+    @media (max-width: 480px) {
+      .address-block { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">百人の顔<span>100 Faces of Japan</span></a>
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="hayashiya.html">林屋克三郎</a>
+        <a href="project.html">企画概要</a>
+        <a href="contact.html" class="active">お問い合わせ</a>
+      </nav>
+      <a href="tel:0335696700" class="header-tel" aria-label="電話番号 03-3569-6700">
+        <small>TEL</small>03-3569-6700
+      </a>
+      <button class="hamburger" aria-label="メニューを開く" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
+    <a href="index.html">トップ</a>
+    <a href="hayashiya.html">林屋克三郎について</a>
+    <a href="project.html">企画概要・仕様</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="tel:0335696700" style="color:var(--gold-lt);font-weight:700;">&#128222; 03-3569-6700（担当：塩澤）</a>
+  </nav>
+
+  <!-- TEL HERO -->
+  <section class="tel-hero" aria-labelledby="contact-heading">
+    <div class="tel-hero-inner">
+      <span class="section-label" style="color:var(--gold-lt);">CONTACT</span>
+      <h1 id="contact-heading">お申し込み・お問い合わせ</h1>
+      <p class="tel-hero-tagline">
+        まずはお電話ください。<br>
+        担当の塩澤が丁寧にご案内いたします。
+      </p>
+
+      <div class="tel-box">
+        <p class="tel-label-sm">TEL</p>
+        <a href="tel:0335696700" class="tel-num" aria-label="電話番号 03-3569-6700">03-3569-6700</a>
+        <div class="tel-person-row">
+          <span>担当：<strong>塩澤</strong></span>
+          <span>受付：<strong>平日 10:00〜18:00</strong></span>
+        </div>
+      </div>
+
+      <br>
+      <p class="tel-reassure">
+        &#128100;「何を聞いたらいいかわからない」でも大丈夫です。<br>
+        <strong>「百人の顔について聞きたい」</strong>とひと言おっしゃるだけでOK。<br>
+        担当：塩澤が丁寧にお答えします。
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT METHODS -->
+  <section class="bg-gray">
+    <div class="container fade-in">
+      <span class="section-label">HOW TO CONTACT</span>
+      <h2>お問い合わせ方法</h2>
+      <div class="divider"></div>
+      <p class="lead">ご参加・ご購入・ご質問など、何でもお気軽にご相談ください。</p>
+      <div class="contact-methods">
+
+        <!-- 電話 -->
+        <div class="method-card tel-card">
+          <span class="method-icon" aria-hidden="true">&#128222;</span>
+          <h3>お電話</h3>
+          <a href="tel:0335696700" class="method-val">03-3569-6700</a>
+          <p>担当：塩澤<br>平日 10:00〜18:00（土日祝休）<br>お電話が最も早く解決します。</p>
+          <a href="tel:0335696700" class="btn-primary" style="margin-top:20px;font-size:14px;padding:12px 24px;">今すぐ電話する</a>
+        </div>
+
+        <!-- メール -->
+        <div class="method-card">
+          <span class="method-icon" aria-hidden="true">&#128140;</span>
+          <h3>メール</h3>
+          <a href="mailto:shiozawa@actilus.co.jp" class="method-val" style="font-size:13px;word-break:break-all;">shiozawa@actilus.co.jp</a>
+          <p>担当：塩澤<br>2営業日以内に返信いたします。<br>件名に「百人の顔について」とご記入ください。</p>
+          <a href="mailto:shiozawa@actilus.co.jp" class="btn-outline" style="margin-top:20px;font-size:14px;padding:12px 24px;">メールを送る</a>
+        </div>
+
+        <!-- 来社 -->
+        <div class="method-card">
+          <span class="method-icon" aria-hidden="true">&#128205;</span>
+          <h3>ご来社</h3>
+          <span class="method-val" style="font-size:14px;color:var(--blue);">銀座 風月堂ビル5F</span>
+          <p>〒104-0061<br>東京都中央区銀座6丁目6-1<br>事前にお電話でご予約ください。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ADDRESS -->
+  <section>
+    <div class="container fade-in">
+      <span class="section-label">ACCESS</span>
+      <h2>所在地・アクセス</h2>
+      <div class="divider"></div>
+      <div class="address-block">
+        <h3>NPO法人先端医療をささえる会</h3>
+        <address>
+          <strong>住所：</strong>〒104-0061<br>
+          東京都中央区銀座6丁目6-1　銀座風月堂ビル 5F<br>
+          <br>
+          <strong>TEL：</strong><a href="tel:0335696700" class="address-tel">03-3569-6700</a><br>
+          <strong>受付時間：</strong>平日 10:00〜18:00（土日祝日休み）<br>
+          <strong>担当：</strong>塩澤<br>
+          <strong>Mail：</strong><a href="mailto:shiozawa@actilus.co.jp" style="color:var(--mid);">shiozawa@actilus.co.jp</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray">
+    <div class="container fade-in">
+      <span class="section-label">FAQ</span>
+      <h2>よくあるご質問</h2>
+      <div class="divider"></div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-text">どんな些細なことでも電話していいですか？</span>
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">はい、もちろんです。「百人の顔って何ですか？」というところからお話しください。担当の塩澤が丁寧にご説明いたします。難しい言葉は使いませんのでご安心ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-text">参加資格はありますか？</span>
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">発案者・林屋克三郎が直接お声がけした方が掲載対象となります。「ぜひ参加したい」という方はまずお電話（03-3569-6700）にてご相談ください。林屋が直接お話しします。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-text">費用はかかりますか？</span>
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">このプロジェクトは広告ではありません。掲載料は頂きません。詳細はお電話にてご案内いたします。なお冊子のご購入は1冊3,000円（税込）です。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-text">取材・撮影にどれくらい時間がかかりますか？</span>
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">銀座の弊社オフィスまたはご指定の場所にも伺います。インタビューは通常1〜2時間程度。撮影と合わせても半日あれば完了いたします。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-text">まず冊子を買ってから検討できますか？</span>
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">はい、1冊3,000円（税込）でご購入いただけます。実物をご覧になってから参加をご検討いただくことを歓迎しております。お電話（03-3569-6700）にてご注文ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-text">掲載内容の確認・修正はできますか？</span>
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">はい。原稿のゲラ（校正刷り）は必ずご本人にご確認いただきます。内容に問題がないことをご確認いただいた後に入稿・印刷となりますのでご安心ください。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="background:linear-gradient(135deg, var(--navy), #0d2a5c);padding:80px 24px;text-align:center;">
+    <div class="container fade-in">
+      <span class="section-label" style="color:var(--gold-lt);">CONTACT</span>
+      <h2 style="color:#fff;">お電話でのご相談が<br>一番早く解決します</h2>
+      <p class="lead" style="color:#9ab8d8;margin:12px auto 40px;text-align:center;">
+        「百人の顔について聞きたい」とひと言いただければOKです。<br>
+        担当：塩澤が丁寧にお答えします。
+      </p>
+      <a href="tel:0335696700" class="btn-tel" style="font-size:clamp(22px,4vw,36px);padding:22px 52px;">&#128222; 03-3569-6700</a>
+      <p style="margin-top:20px;font-size:13px;color:#6a8ab0;">担当：塩澤　／　平日 10:00〜18:00（土日祝休）</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-logo">百人の顔</p>
+        <p class="footer-tagline">未来へ贈るメッセージ<br>100の人生・100の哲学<br>NPO法人先端医療をささえる会</p>
+      </div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップページ</a>
+        <a href="hayashiya.html">林屋克三郎について</a>
+        <a href="project.html">企画概要・仕様</a>
+        <a href="contact.html">お申し込み・お問い合わせ</a>
+      </nav>
+      <div class="footer-contact">
+        <p>
+          NPO法人先端医療をささえる会　担当：塩澤<br>
+          TEL: <a href="tel:0335696700">03-3569-6700</a>　（平日 10:00〜18:00）<br>
+          〒104-0061　東京都中央区銀座6丁目6-1　銀座風月堂ビル5F
+        </p>
+      </div>
+    </div>
+    <p class="footer-copy">&#169; NPO法人先端医療をささえる会　「百人の顔」プロジェクト</p>
+  </footer>
+
+  <!-- STICKY TEL -->
+  <div class="sticky-tel" aria-label="電話でのお問い合わせ">
+    <a href="tel:0335696700">&#128222; 03-3569-6700</a>
+    <p>担当：塩澤（平日 10:00〜18:00）</p>
+  </div>
+
+  <script>
+    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+
+    function toggleFaq(btn) {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i) {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(function(el) { obs.observe(el); });
+  </script>
+</body>
+</html>
